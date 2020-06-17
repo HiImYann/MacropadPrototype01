@@ -271,9 +271,6 @@ F 3 "" H 3000 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 2500 3000 2350
-Connection ~ 3000 2500
-Wire Wire Line
-	3000 2500 3450 2500
 $Comp
 L Device:R_Small R3
 U 1 1 5EEA2D9C
@@ -711,27 +708,19 @@ Connection ~ 2650 4200
 Wire Wire Line
 	2650 4200 2650 4400
 $Comp
-L Device:Fuse F?
-U 1 1 5EE94B86
-P 6700 3950
-F 0 "F?" H 6760 3996 50  0000 L CNN
-F 1 "Fuse" H 6760 3905 50  0000 L CNN
-F 2 "" V 6630 3950 50  0001 C CNN
-F 3 "~" H 6700 3950 50  0001 C CNN
-	1    6700 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Polyfuse_Small F1
 U 1 1 5EE95BEE
 P 3550 2500
 F 0 "F1" V 3345 2500 50  0000 C CNN
 F 1 "500mA" V 3436 2500 50  0000 C CNN
-F 2 "" H 3600 2300 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 3600 2300 50  0001 L CNN
 F 3 "~" H 3550 2500 50  0001 C CNN
 	1    3550 2500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3650 2500 3950 2500
+Wire Wire Line
+	3450 2500 3000 2500
+Connection ~ 3000 2500
 $EndSCHEMATC
