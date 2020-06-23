@@ -271,9 +271,6 @@ F 3 "" H 3000 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 2500 3000 2350
-Connection ~ 3000 2500
-Wire Wire Line
-	3000 2500 3450 2500
 $Comp
 L Device:R_Small R3
 U 1 1 5EEA2D9C
@@ -723,4 +720,7 @@ F 3 "~" H 3550 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 2500 3950 2500
+Wire Wire Line
+	3450 2500 3000 2500
+Connection ~ 3000 2500
 $EndSCHEMATC

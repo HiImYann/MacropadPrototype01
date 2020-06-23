@@ -707,9 +707,14 @@ Wire Wire Line
 Connection ~ 2650 4200
 Wire Wire Line
 	2650 4200 2650 4400
+Wire Wire Line
+	3650 2500 3950 2500
+Wire Wire Line
+	3450 2500 3000 2500
+Connection ~ 3000 2500
 $Comp
 L Device:Polyfuse_Small F1
-U 1 1 5EE95BEE
+U 1 1 5EEA6CC4
 P 3550 2500
 F 0 "F1" V 3345 2500 50  0000 C CNN
 F 1 "500mA" V 3436 2500 50  0000 C CNN
@@ -718,9 +723,4 @@ F 3 "~" H 3550 2500 50  0001 C CNN
 	1    3550 2500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3650 2500 3950 2500
-Wire Wire Line
-	3450 2500 3000 2500
-Connection ~ 3000 2500
 $EndSCHEMATC
